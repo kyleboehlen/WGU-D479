@@ -4,6 +4,11 @@ import tailwindcss from '@tailwindcss/vite'
 import handlebars from 'vite-plugin-handlebars';
 import { Mesa } from '@octamap/mesa'
 export default defineConfig({
+  base: '/wgu-d479-deploy/',
+  build: {
+    outDir: '../wgu-d479-deploy',
+    emptyOutDir: true,
+  },
   plugins: [
     tailwindcss(),
     // handlebars({
